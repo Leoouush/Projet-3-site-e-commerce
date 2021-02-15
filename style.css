@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0 ;
+    /* box-sizing: border-box; */
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+.flex {
+    display: flex;
+}
+.column {
+    flex-direction: column;
+}
+.entete {
+    justify-content: space-between;
+}
+
+header{
+    background: #F2ECE7;
+    /* position: fixed; 
+    width: 100%; */
+}
+
+.myheader {
+    gap: 150px;
+    margin:27px 38px 11px 38px ;
+}
+.myheader2{
+    gap: 50px;
+    margin:27px 38px 11px 38px ;
+}
+
+.big {
+    font-size: 24px;
+    margin-bottom: 11px;
+}
+
+a, button {
+    font-family:"Roboto",sans-serif;
+}
+
+.deroulant{
+    display: flex;
+    height: 30vh;
+    
+}
