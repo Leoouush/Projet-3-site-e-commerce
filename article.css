@@ -1,0 +1,202 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+
+body{
+    background-color: #FDFBFA;
+
+}
+
+/* setup */
+
+
+.flex{
+    display: flex;
+    justify-content: center;
+    
+}
+
+/* FONT */
+
+h1{
+    font-family: 'Barlow', sans-serif;
+    font-size: 30px;
+}
+ 
+h4{
+    font-family: 'Catamaran', sans-serif;
+    font-size: 18px;
+    font-weight: 200;
+}
+
+
+/* BARRE NAV */
+
+
+nav{
+    display: flex;
+    height: 61px;
+    justify-content: space-between;
+    background-color: #F2ECE7;
+    width: 100%;
+   position: fixed;
+   
+}
+
+
+.h1{
+    margin-left: 53px;
+    padding: 13px;
+}
+
+.cat1{
+    
+    display: flex;
+    margin-right: 300px;
+    padding: 20px;
+    gap: 120px;
+    
+}
+
+.cat2{
+    margin-right: 21px;
+    gap: 44px;
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+
+/* <!-- LES 3 PHOTOS --> */
+
+.s1{
+    padding-top: 150px;
+    gap: 90px;
+}
+
+.container1{
+    margin-left: 71px;
+    flex-direction: column;
+    width: 145px;
+    height: 642px;
+    justify-content: space-between;
+    gap: 18px;
+}
+
+
+/* PHOTO PPALE */
+
+.container2{ 
+
+    width: 487px;
+    height: 642px;  
+}
+
+/* <!-- PARTIE DESCRIPTION --> */
+
+.s2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 26px;
+    margin-right: 71px;
+    width: 600px;
+}
+
+.titre2{
+  
+    gap: 142px;
+    display: flex;
+    justify-content: space-between;
+}
+
+h2{
+
+    font-family: Catamaran;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+
+/* COULEURS */
+
+.couleurs2{
+    margin-top: 15px;  
+}
+
+
+
+p{
+    font-family: Catamaran;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+
+}
+
+#ref{
+    font-family: Barlow;
+    font-weight: 100;
+}
+/* TAILLE */
+
+.taille{
+    border: 2px solid black;
+    padding: 7px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#fleche{
+    padding-right: 20px;
+}
+
+#choisir{
+    padding-left: 10px;
+    
+}
+
+/* PANIER  */
+
+.panier{
+    display: flex;
+   gap: 25px;
+}
+
+#ajouter{
+   
+    width: 179.44px;
+    padding-top: 7px;
+    text-align: center;
+    background-color: black;
+}
+
+#whitefont{
+    color: white;
+    font-family: 'Catamaran';
+}
+
+#coeur{
+    border: 2px solid black;
+    padding: 7px;
+}
+
+/* DESC ET COMPO  */
+
+
+
+
+h5{
+    font-family: Catamaran;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 50px;
+}
+
+
+/* LOGO  */
+
