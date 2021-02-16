@@ -7,55 +7,88 @@
     <title>La Capsule</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <!-- En tête -->
-    <header>
-        <nav class="entete flex">
-            <div class="myheader deroulant flex">
-                <p class="big">LA CAPSULE</p>
-                <div class="vetement">
-                    <button>Vêtements</button>
-                    <ul>
-                        <li><a href="#">Robes</a></li>
-                        <li><a href="#">Tailleurs</a></li>
-                        <li><a href="#">Tops</a></li>
-                        <li><a href="#">Pantalon</a></li>
-                        <li><a href="#">Sportwear</a></li>
-                        <li><a href="#">Lingerie</a></li>
-                    </ul>
+        <header>
+            <nav class="entete flex">
+                <div class="myheader dropdown flex">
+                    <p class="big">LA CAPSULE</p>
+                    <div class="vetement">
+                        <div class="big">Vêtements</div>
+                        <ul>
+                            <li><a href="#">Robes</a></li>
+                            <li><a href="#">Tailleurs</a></li>
+                            <li><a href="#">Tops</a></li>
+                            <li><a href="#">Pantalon</a></li>
+                            <li><a href="#">Sportwear</a></li>
+                            <li><a href="#">Lingerie</a></li>
+                        </ul>
+                    </div>
+                    <div class="chaussures">
+                        <button>Chaussures</button>
+                        <ul>
+                            <li><a href="#">Bottes</a></li>
+                            <li><a href="#">Escarpins</a></li>
+                            <li><a href="#">Sandales</a></li>
+                            <li><a href="#">Baskets</a></li>
+                        </ul>
+                    </div>
+                    <div class="accessoires">
+                        <button>Accessoires</button>
+                        <ul>
+                            <li><a href="#">Bijoux</a></li>
+                            <li><a href="#">Chapeaux</a></li>
+                            <li><a href="#">Lunettes de Soleil</a></li>
+                        </ul>
+                    </div>
+                    
+                    
                 </div>
-                <div class="chaussures">
-                    <button>Chaussures</button>
-                    <ul>
-                        <li><a href="#">Bottes</a></li>
-                        <li><a href="#">Escarpins</a></li>
-                        <li><a href="#">Sandales</a></li>
-                        <li><a href="#">Baskets</a></li>
-                    </ul>
+                <div class="myheader2 flex">
+                    <p>Mon compte</p>
+                    <p>Panier</p>
                 </div>
-                <div class="accessoires">
-                    <button>Accessoires</button>
-                    <ul>
-                        <li><a href="#">Bijoux</a></li>
-                        <li><a href="#">Chapeaux</a></li>
-                        <li><a href="#">Lunettes de Soleil</a></li>
-                    </ul>
-                </div>
-                
-                
-            </div>
-            <div class="myheader2 flex">
-                <p>Mon compte</p>
-                <p>Panier</p>
-            </div>
-        </nav>
-    </header>
+            </nav>
+        </header>
+        <section class="landing">
+            
+                <h1 class="titre">COLLECTION PRINTEMPS 21</h1>
+            
 
-    <!-- Section 1 -->
-    <section class="s1">
+        </section>
+    
+        <!-- Animation GSAP -->
+    <div class="intro">
+        <div class="intro-text">
+            <h1 class="hide">
+                <span class="text">Une garde robe</span>
+            </h1>
+            <h1 class="hide">
+                <span class="text">minimaliste</span>
+            </h1>
+            <h1 class="hide">
+                <span class="text">au quotidien</span>
+            </h1>
+        </div>
+    </div> 
+    <div class="slider"></div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js" 
+    integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ==" 
+    crossorigin="anonymous"></script>
+    <script src="./gsap.js"></script>
+
+
+
+    <!-- Acceuil -->
+    <section class="">
         <div class="image flex"></div>
         <div class="titre flex">COLLECTION PRINTEMPS 21</div>
         <div class="flex">Reséau Sociaux</div>

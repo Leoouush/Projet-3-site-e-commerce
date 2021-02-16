@@ -4,8 +4,11 @@
     /* box-sizing: border-box; */
 }
 
+
+    /* Acceuil */
+
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Barlow', sans-serif;
     font-size: 16px;
 }
 
@@ -21,8 +24,7 @@ body{
 
 header{
     background: #F2ECE7;
-    /* position: fixed; 
-    width: 100%; */
+    
 }
 
 .myheader {
@@ -39,12 +41,152 @@ header{
     margin-bottom: 11px;
 }
 
-a, button {
-    font-family:"Roboto",sans-serif;
+.landing {
+    border: 4px solid red;
+    background: url(images/photo_acceuil.png) ;
+    background-size: cover;
+    height: 784px;
 }
 
-.deroulant{
+.titre {
+    border: 4px solid blue;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 86px;
+    line-height: 141px;
+    left:69px;
+    top: 516px;
+    height: 268px;
     display: flex;
-    height: 30vh;
-    
+    flex-direction: column;
+    width: 886px;
+
+}
+
+}
+
+.landing {
+    display:flex;
+    align-items: flex-end;
+   
+}
+
+
+
+    /* Animation GSAP */
+
+.intro{
+    background:rgb(253, 251, 251) ;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'Catamaran', sans-serif;
+}
+
+.slider{
+    background:#F2ECE7;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+}
+
+
+.intro-text{
+    color: rgb(7, 7, 7);
+    font-size: 3rem;
+}
+
+.hide{
+    background:rgb(253, 251, 251) ;
+    overflow: hidden;
+}
+.hide span{
+    transform: translateY(100%);
+    display: inline-block;
+}
+
+.vetement, .chaussures, .accessoires, button {
+    display: flex;
+    justify-content: center;
+    background:#F2ECE7;
+    border: none;
+}
+
+
+    /* Menu Déroulant */
+
+a, button {
+    font-family:"Barlow",sans-serif;
+}
+
+.dropdown {
+    /* height: 46vh; */
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    border: none;
+}
+
+.vetement, .chaussures, .accessoires {
+    position: relative;
+}
+
+
+.vetement ul, .chaussures ul, .accessoires ul{
+    position: absolute;
+    background: #F2ECE7;
+    margin-top: 50px;
+    /* width: 50px; */
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    list-style: none;
+    opacity:0;   
+    transform: translateY(10px);
+    transition: all 0.4s ease;
+}
+
+.vetement a, .chaussures a, .accessoires a {
+    text-decoration: none;
+}
+
+.vetement li, .chaussures li, .accessoires li {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.vetement li:hover, .chaussures li:hover, .accessoires li:hover {
+    background-color:  #F2ECE7;
+}
+
+
+.dropdown button, .vetement {
+    background: none;
+    border: none;
+    /* color:black; */
+    text-decoration: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+.vetement button,.vetements:focus + ul,
+.chaussures button:focus + ul,
+.accessoires button:focus + ul {
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(0px);
 }
