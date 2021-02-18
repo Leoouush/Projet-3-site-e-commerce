@@ -1,25 +1,41 @@
+
+* { margin: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Barlow Semi Condensed', sans-serif, 'Catamaran', sans-serif;
+}
+
+/* HEADER DE THUSIKA */
+
 nav{
     display: flex;
     height: 61px;
     justify-content: space-between;
     background-color: #F2ECE7;
     width: 100%;
-   position: fixed;
-
+    position: fixed;
+   
 }
-
 
 .h1{
     margin-left: 53px;
     padding: 13px;
 }
 
+h4{
+  font-family: 'Catamaran', sans-serif;
+  font-size: 18px;
+  font-weight: 200;
+}
+
 .cat1{
-    border: 4px solid red;
+
     display: flex;
     margin-right: 300px;
     padding: 20px;
-
+    gap: 120px;
 }
 
 .cat2{
@@ -30,165 +46,38 @@ nav{
     padding: 20px;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-}
+
+/******* PAGES VETEMENTS - VANUSA *******/
 
 .flex {
-    display: flex;
+  display: flex;
 }
 
-section {
+.petitePhoto {
+  margin: 152px 116px 76px;
+}
+
+.grandePhoto {
+  margin: 70px 46px 20px;
+}
+
+.sectionPaire { 
+    height: 100vh;
+    justify-content: space-around;
     
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 44px;
-    padding: 66px;
+}
+.sectionImpaire { 
+    height: 100vh;
+    justify-content: space-around;
 }
 
 
-.containerMenu {
-    margin: 5em;
-    display: flex;
-    flex-direction: center;
-    align-items: center;
-    justify-content: space-between;
-}
 
 
-.item {
-    flex: basis;
-}
-
- /* page vetements 1 */
-
- .containerVetements1 {
-    
-    display: flex; 
-    flex-direction: center;
-    align-items: center;
-    justify-content: space-evenly;
-    
-  }
-
-   .tshirt {
-    background-image: url(images/t-shirt.png);
-    background-size: 100%;
-    width: 553px;
-    height: 694px;
-  }
-
-  .basket {
-    background-image: url(images/basket.png);
-    background-size: 100%;
-    width: 441px;
-    height: 546px;
-  }
-
-   /* page vetements 2 */
-
-.containerVetements2 {
-    margin: 0em;
-    display: flex; 
-    flex-direction: center;
-    align-items: center;
-    justify-content: space-evenly;
-    gap: unset;
-  }
-
-  .sandale {
-    background-image: url(images/sandale.png);
-    background-size: 100%;
-    width: 441px;
-    height: 546px;
-  }
-
-  .robeRouge {
-    background-image: url(images/robeRouge.png);
-    background-size: 100%;
-    width: 553px;
-    height: 694px;
-  }
-
-   /* page vetements 3 */
-
-   .containerVetements3 {
-    margin: 0em;
-    display: flex; 
-    flex-direction: center;
-    align-items: center;
-    justify-content: space-evenly;
-    gap: unset;
-  }
-  
-  .sportwearNoir {
-    background-image: url(images/sportwearNoir.png);
-    background-size: 100%;
-    width: 553px;
-    height: 694px;
-  }
-
-  .basket2 {
-    background-image: url(images/basket2.png);
-    background-size: 100%;
-    width: 441px;
-    height: 546px;
-  }
-
-   /* /* page vetements 4 */
-
-.containerVetements4 {
-    margin: 0em;
-    display: flex; 
-    flex-direction: center;
-    align-items: center;
-    justify-content: space-evenly;
-    gap: unset;
-  }
-
-  .scarpin {
-    background-image: url(images/scarpin.png);
-    background-size: 100%;
-    width: 441px;
-    height: 546px;
-  }
-
-  .tailleurNoir {
-    background-image: url(images/tailleurNoir.png);
-    background-size: 100%;
-    width: 553px;
-    height: 694px;
-  }
-
-/* page vetements 5 */
-
-.containerVetements5 {
-    margin: 0em;
-    display: flex; 
-    flex-direction: center;
-    align-items: center;
-    justify-content: space-evenly;
-    gap: unset;
-  }
-
-  .jupePull {
-    background-image: url(images/jupePull.png);
-    background-size: 100%;
-    width: 553px;
-    height: 694px;
-  }
-
-  .bottine { 
-    background-image: url(images/bottine.png);
-    background-size: 100%;
-    width: 441px;
-    height: 546px;
-  }
 
   /* MEDIA QUERIES - PAGE VETEMENTS - 900px */
-  @media (max-width: 900px) { 
+
+  /* @media (max-width: 900px) { 
 
     .containerMenu {
         position: flex;
@@ -200,4 +89,4 @@ section {
         justify-content: center !important;
         align-items: center;
     }
-}
+}  */
