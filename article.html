@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Capsule</title>
+    <title>LA CAPSULE</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="app.js">
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
     <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Catamaran:wght@100;200;700&display=swap" rel="stylesheet">
 
@@ -14,12 +15,13 @@
     <!-- HEADER -->
 
     <header>
-
-        <nav class="nav">
-            <div class="h1">
-                <h1>LA CAPSULE</h1>
-            </div>
-                
+    
+        <div class="h1">
+            <h1>LA CAPSULE</h1>
+        </div>
+        
+        <nav class="nav ">
+        
             <div class="cat1">
                 <h4>Vêtements</h4>
                 <h4>Chaussures</h4>
@@ -27,38 +29,45 @@
             </div>
 
             <div class="cat2">
-                <h4>Mon compte<h4>                  <h4>Panier</h4>
+                <h4>Mon compte</h4>
+                <h4>Panier</h4>
             </div>
-        </nav>
+        </nav> 
+
+        <div class="burger">
+            <span></span>
+            <span></span>
+            
+        </div>
+        
     </header>
 
    
     <!-- LES 3 PHOTOS --> 
 
     <section class="s1 flex">
+        <div class="imagereverse">
+            <div class="container1 flex">
+
+                <div class="box1">
+                    <img src="photo2.jpg" alt="face">
+                </div>
+
+                <div class="box2">
+                    <img src="photo3.jpg" alt="back">
+                </div>
+
+                <div class="box3">
+                    <img src="photo4.jpg" alt="sitted">
+                </div>
+            
+            </div>
+
+            <!-- LA PHOTO PPALE -->
         
-        <div class="container1 flex">
-
-            <div class="box1">
-                <img src="photo2.jpg" alt="face">
+            <div class="container2 flex">
+                <img src="photo1.jpg" alt="photoprincipale">
             </div>
-
-            <div class="box2">
-                <img src="photo3.jpg" alt="back">
-            </div>
-
-            <div class="box3">
-                <img src="photo4.jpg" alt="sitted">
-            </div>
-
-
-        </div>
-    
-
-        <!-- LA PHOTO PPALE -->
-       
-        <div class="container2 flex">
-            <img src="photo1.jpg" alt="photoprincipale">
         </div>
 
 
@@ -138,6 +147,92 @@
             </div>
          
         </div>
+
+
+
+    </section>   
+
+    <!-- JS BURGER   -->
+
+    <script src="app.js"></script>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="foot">  
+
+            <!-- NEWS  -->
+
+            <div class="news">
+               
+                <h3>Newsletter
+                </h3>
+
+                <h5 id="mail">Adresse e-mail
+                </h5>
+
+                <h5>À propos de nous 
+                </h5>
+                
+            </div>
+
+            <!-- RESEAUX -->
+
+            <div class="reseaux">
+                
+                <h3>Réseaux sociaux</h3>
+
+                <a style="text-decoration:none" href="https://www.facebook.com/Jacquemusfanbasepage/" target="_blank" ><h5>Facebook</h5></a> 
+    
+                <a style="text-decoration:none" href="https://twitter.com/mango" target="_blank"><h5>Twitter </h5></a>
+    
+                <a style="text-decoration:none" href="https://www.instagram.com/mango/" target="_blank"><h5>Instagram</h5></a>
+    
+            </div>     
+
+            <!-- AIDE  -->
+
+            <div class="aide">   
+                <h3 style="cursor: help;">Aide</h3>
+                <h5>Livraison</h5>
+                <h5>Retour</h5>
+                <h5>FAQ</h5>
+
+            </div>
+
+            <!-- FORMULAIRE -->
+
+            <div class="form">
+                <h3>Nous contacter</h3>
+
+                <form action="">
+                    <input class="text"   type="text" name="nom" id="nom" placeholder="Nom">
+                    <input class="text" type="email" name="email" id="email" placeholder="E-mail">
+                  
+                    <textarea class="message" name="message" id="message" cols="30" rows="10" placeholder="Votre message"></textarea>
+                 
+                    <input class="button" type="submit" value="Envoyer">
+                </form>
+
+                <div class="picto">
+                   <a href="https://www.facebook.com/Jacquemusfanbasepage/" target="_blank"> <img src="fb.png" alt="pictoreseauxsoc"></a>
+
+
+                   <a href="https://www.instagram.com/mango/" target="_blank"> <img src="insta.png" alt=""> </a>
+
+                   <a href="https://twitter.com/mango" target="_blank"> <img src="twi.png" alt=""> </a>
+
+                </div>
+
+            </div>
+
+           
+
+        </div>
         
+    </footer>
+
+
 </body>
 </html>
