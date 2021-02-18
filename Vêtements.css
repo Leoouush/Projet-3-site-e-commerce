@@ -1,7 +1,6 @@
 
-* {
+* { margin: 0;
     margin: 0;
-    padding: 0;
 }
 
 body {
@@ -25,6 +24,12 @@ nav{
     padding: 13px;
 }
 
+h4{
+  font-family: 'Catamaran', sans-serif;
+  font-size: 18px;
+  font-weight: 200;
+}
+
 .cat1{
 
     display: flex;
@@ -42,27 +47,29 @@ nav{
 }
 
 
-/******* PAGES VETEMENTS 1 - VANUSA *******/
+/******* PAGES VETEMENTS - VANUSA *******/
 
-.section1 { 
-    display: flex;
-    height: 784px;
-    justify-content: space-between;
+.flex {
+  display: flex;
 }
-/* 
-.tshirt {
- 
-  left: 46px;
-  top: 70px;
-  padding: 70px 0 20px 46px;
- 
-} */
-/* 
-.basket {
-  width: 441px;
-  height: 556px;
-  padding: 152px 116px 76px 0;
-} */
+
+.petitePhoto {
+  margin: 152px 116px 76px;
+}
+
+.grandePhoto {
+  margin: 70px 46px 20px;
+}
+
+.sectionPaire { 
+    height: 100vh;
+    justify-content: space-around;
+    
+}
+.sectionImpaire { 
+    height: 100vh;
+    justify-content: space-around;
+}
 
 
 
