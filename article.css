@@ -1,7 +1,10 @@
 * { 
     margin: 0;
     padding: 0;
-    box-sizing: border-box;   
+    box-sizing: border-box; 
+    list-style-type: none;
+    text-decoration: none;
+    color: black;  
 }
 
 
@@ -78,6 +81,7 @@ nav{
     padding: 15px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 22vw;
      margin-left: 210px;
 }
@@ -86,6 +90,53 @@ nav{
   display: none;
 }
 
+/* Menu Déroulant */
+
+header > a, 
+header button {
+    color: black;
+    margin: 0.15px;
+    font-size: 1.3em;
+}
+header button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+
+header .dropdown .content {
+    position: relative;
+    
+}
+header .dropdown .content {
+    display: none;
+}
+header .content  a{
+    color: black;
+    
+}
+
+header .dropdown:hover .content {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: #F5EAE0;
+    top: 61px;
+    padding: 20px 40px;
+   
+
+}
+
+
+.box {
+    padding: 30px;
+    font-weight: 200;
+    font-family: 'Catamaran',sans-serif;
+    
+}
 
 /* BURGER */
 
