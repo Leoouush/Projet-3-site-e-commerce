@@ -1,6 +1,8 @@
 *{
     margin: 0;
     padding: 0 ;
+    list-style-type: none;
+    text-decoration: none;
     /* box-sizing: border-box; */
 }
 
@@ -47,7 +49,6 @@ header{
 
 nav{
     display: flex;
-   
   
 }
 
@@ -65,12 +66,10 @@ nav{
 
 .cat1{
     margin-left: 20vw;
-    padding: 15px;
+    padding: 10px;
     display: flex;
     justify-content: space-between;
     width: 564px;
-    
-    
 }
 
 .cat2{
@@ -82,10 +81,58 @@ nav{
     
 }
 
+
 .big {
     font-size: 24px;
     margin-bottom: 11px;
 }
+
+/* Menu Déroulant */
+
+header > a, 
+header button {
+    color: black;
+    margin: 0.15px;
+    font-size: 1.3em;
+}
+header button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+
+header .dropdown .content {
+    position: relative;
+    
+}
+header .dropdown .content {
+    display: none;
+}
+header .content  a{
+    color: black;
+}
+
+header .dropdown:hover .content {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: #F5EAE0;
+    top: 61px;
+    padding: 20px 40px;
+
+}
+
+
+.box {
+    padding: 30px;
+    font-weight: 200;
+    font-family: 'Catamaran',sans-serif;
+}
+
+
 
 
     /* Section */
@@ -99,7 +146,7 @@ nav{
     font-family: 'Catamaran', sans-serif;
     font-size: 86px;
     line-height: 141px;
-    font-weight: 100;
+    font-weight: 300;
     margin-left: 92px;
     margin-bottom: 62px;
     height: 268px;
@@ -134,9 +181,10 @@ nav{
 }
 .text {
     font-size: 5rem;
+    font-weight: 300;
 }
 .slider{
-    background:#F2ECE7;
+    background:#FBF9F9;
     position: fixed;
     top: 0;
     left: 0;
@@ -160,12 +208,6 @@ nav{
     display: inline-block;
 }
 
-.vetement, .chaussures, .accessoires, button {
-    display: flex;
-    justify-content: center;
-    background:#F2ECE7;
-    border: none;
-}
 
 
 
@@ -189,77 +231,3 @@ nav{
 
 
 
-
-    /* Menu Déroulant */
-
-a, button {
-    font-family:"Barlow",sans-serif;
-}
-
-.dropdown {
-    /* height: 46vh; */
-    /* width: 100%; */
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    border: none;
-}
-
-.vetement, .chaussures, .accessoires {
-    position: relative;
-    border: none;
-    text-decoration: none;
-}
-
-
-.vetement ul, .chaussures ul, .accessoires ul{
-    position: absolute;
-    background: #F2ECE7;
-    margin-top: 50px;
-    height: 200px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-    list-style: none;
-    opacity:0;   
-    transform: translateY(100%);
-    transition: all 0.4s ease;
-}
-
-.vetement a, .chaussures a, .accessoires a {
-    text-decoration: none;
-}
-
-.vetement li, .chaussures li, .accessoires li {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.vetement li:hover, .chaussures li:hover, .accessoires li:hover {
-    background-color:  #F2ECE7;
-    
-}
-
-
-.dropdown button, .vetement {
-    background: none;
-    border: none;
-    /* color:black; */
-    text-decoration: none;
-    font-size: 18px;
-    cursor: pointer;
-}
-
-
-.vetement button,.vetements:focus + ul,
-.chaussures button:focus + ul,
-.accessoires button:focus + ul {
-    opacity: 1;
-    pointer-events: all;
-    transform: translate(0px);
-}
