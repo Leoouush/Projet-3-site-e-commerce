@@ -57,16 +57,18 @@
         <!-- PAIEMENT -->
         <div class="paiement">
             <h6>Informations personnelles :</h6>
-                <form action="">
+                <form action="" class="formpaye">
                     <label for="nom">Nom</label>
-                    <input type="text" name="nom" id="nom" >
+                    <input type="text" name="nom" id="nom" size="35">
                     <label for="prenom">Prénom</label>
-                    <input type="text" name="prenom" id="prenom" >
+                    <input type="text" name="prenom" id="prenom" size="35" >
+                </form>    
+                    
                 </form>
             <h6>Informations de livraison :</h6>
-                <form action="">
+                <form action="" class="">
                     <label for="adresse">Adresse</label>
-                    <input type="text" name="adresse" id="adresse" >
+                    <input type="text" name="adresse" id="adresse">
                 </form>
             <h6>Modalités de paiement :</h6>
             <p class="cartes"> <img src="images/visa.png" alt="carte visa">
@@ -74,19 +76,19 @@
                 <img src="images/paypal.png" alt="image Paypal">
             </p>
               <p>
-            <p>
-                <form action="">
+            <p class="p1">
+                <form action="" class="CB">
                     <input type="chiffre" name="chiffres" id="chiffres" placeholder="numéro de carte bancaire" size="25">
                     <input type="text" name="Nom" id="Nom" placeholder="nom sur la CB"> 
                     <input type="chiffre" name="chiffres" id="chiffres" 
                     placeholder="CVV">
                     <input type="date" name="date" id="date" placeholder="Validité">
-                   
                 </form>
+                <form action="" class="paye">
+                    <button type="submit">VALIDER LE PAIEMENT</button>
+                </form> 
             </p>
-            <form action="" class="paye">
-                <button type="submit">PAIEMENT</button>
-            </form>      
+                
         </div>
     </section>
 
