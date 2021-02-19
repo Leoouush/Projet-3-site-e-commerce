@@ -19,6 +19,8 @@ body{
     
 }
 
+/* HEADER */
+
 /* FONT */
 
 h1{
@@ -79,6 +81,11 @@ nav{
     width: 22vw;
      margin-left: 210px;
 }
+
+.pictopanier{
+  display: none;
+}
+
 
 /* BURGER */
 
@@ -359,7 +366,6 @@ h3{
   }
   
   
-  
   .button:hover {
     background-color: #FDFBF3;
   }
@@ -402,8 +408,18 @@ h3{
         justify-content: center;
     }
 
+    .pictopanier{
+      display:block;
+      
+    }
   
-
+    header{
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 5px;
+    }
+    
     /* BURGER */
 
     .burger, h1{
@@ -412,6 +428,7 @@ h3{
 
     .burger{
         display: block;
+        position: absolute;
     }
 
     .burger span{
