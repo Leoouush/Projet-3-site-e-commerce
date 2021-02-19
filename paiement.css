@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
 }
 body {
     font-family: 'Catamaran', sans-serif;
@@ -10,7 +10,7 @@ body {
     background: #F5EAE0;
 }
 .PP {
-    border: 4px solid black;
+    /* border: 4px solid black; */
     height: 100vh;
     display: flex;
     flex-direction: row-reverse;
@@ -18,36 +18,37 @@ body {
     align-items: space-between;
 }
 .panier {
-    border: 4px solid red;
-    width: 40%;    
+    /* border: 4px solid red; */
+    width: 40%; 
+    padding: 0 40px;  
 }
 .paiement {
-    border: 4px solid blue;
-    width: 60%;   
+    /* border: 4px solid blue; */
+    width: 60%; 
+    background: #FDFBFA; 
+    padding: 30px; 
 }
 h5 {
     margin-top: 20px;
     padding: 20px;
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: 500;
 }
-/* .column {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-} */
 .ligne {
     display: flex;
     justify-content: space-between;
 }
 .facture, .ref {
-    border: 2px solid green;
+    /* border: 2px solid green; */
     padding: 20px;
-}    
+}  
+.code {
+    margin-left: 20px;
+} 
+#pt{
+    text-decoration: underline;
+} 
 hr {
-    width: 100%;
-    height: 1px;
-    color: 1px solid black;
     margin: 40px auto;
 }
 .ref {
@@ -59,19 +60,20 @@ hr {
 .reftxt {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center ;
+    justify-content: flex-start;
+    align-items:stretch;
     margin: 20px;
     width: 500px;
-    border: 2px solid red; 
+    /* border: 2px solid red;  */
     font-size: 16px;
+    line-height: 20px;
+    gap: 30px;
 }
 .smallbox {
-    border: 2px solid blueviolet;
+    /* border: 2px solid blueviolet; */
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: space-between ;
-    gap: 15px;
 }
 form {
     padding: 5px;
@@ -81,26 +83,30 @@ form {
     font-size: 14px;
 }
 input {
-    border: none;
+    border: 2px solid lightgrey ;
     background-color: #FDFBFA;
+    /* margin: 0 O 10px 10px;  */
+    margin: 5px;
+}
+button {
+    background-color: #FFFFFF;
+    padding: 10px;
+    width: 100%;
 }
 /* Paiement */
 
-
-    /* width: min(629px, 100%);
-    height: 350px;
-    margin: 45px;
-    padding: 30px;
-    line-height: 21px; */
-/* } */
-
-/* button {
-    background-color: #FBF9F9;
-    padding: 10px;
-} */
-
-
-
+h6 {
+    margin: 10px 50px 10px;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.cartes {
+    margin-left: 30px;
+}
+.paye {
+    margin: 30px 50px;
+}
 /* form {
     border : 2px solid red;
     padding: 20px;

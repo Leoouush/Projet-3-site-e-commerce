@@ -16,24 +16,24 @@
     <!-- Section Panier & Paiement -->
     <section class="PP">
         <div class="panier">
-            <h5>Résumé de la commande</h5>
+            <h5>Résumé de la commande :</h5>
             <div class="facture">
                 <div class="ligne">
-                    <div>1 article</div>
+                    <div>1 article :</div>
                     <div>39,00 EUR</div>
                 </div>
                 <div class="ligne">
-                    <div>Frais de livraison</div>
+                    <div>Frais de livraison :</div>
                     <div>Gratuit</div>
                 </div>
                 <div class="ligne">
-                    <div>TOTAL</div>
+                    <div>TOTAL :</div>
                     <div>39,00 EUR</div>
                 </div>
                 <p id="pt">Supprimer</p>
             </div>   
             <form action=""></form>
-                <input type="text" name="code promotionnel" placeholder="Code promotionnel">
+                <input class="code" type="text" name="code promotionnel" placeholder="Code promotionnel">
             </form>
             <hr>
             <div class="ref">
@@ -45,44 +45,47 @@
                     </p>  
                     <div class="smallbox"> 
                         <p>Taille: 38 </p>
-                        <p>Quantité: 1</p>
+                        <p>Quantité: 1 </p>
                         <p>39,00 EUR</p>
                     </div> 
                 </div>
             </div>
+            <form action="">
+                <button type="submit">FINALISER LA COMMANDE</button>
+            </form> 
         </div>
         <!-- PAIEMENT -->
         <div class="paiement">
-            <h5>INFORMATIONS PERSONNELLES</h5>
+            <h6>Informations personnelles :</h6>
                 <form action="">
                     <label for="nom">Nom</label>
-                    <input type="text" name="nom" id="nom">
+                    <input type="text" name="nom" id="nom" >
                     <label for="prenom">Prénom</label>
-                    <input type="text" name="prenom" id="prenom">
+                    <input type="text" name="prenom" id="prenom" >
                 </form>
-            <h5>INFORMATIONS DE LIVRAISON</h5>
+            <h6>Informations de livraison :</h6>
                 <form action="">
                     <label for="adresse">Adresse</label>
-                    <input type="text" name="adresse" id="adresse">
+                    <input type="text" name="adresse" id="adresse" >
                 </form>
-            <h5>MODALITÉS DE PAIEMENT</h5>
-            <p> <img src="visa.png" alt="carte visa">
-                <img src="amex.png" alt="carte American Express">
-                <img src="paypal.png" alt="image Paypal">
+            <h6>Modalités de paiement :</h6>
+            <p class="cartes"> <img src="images/visa.png" alt="carte visa">
+                <img src="images/amex.png" alt="carte American Express">
+                <img src="images/paypal.png" alt="image Paypal">
             </p>
               <p>
             <p>
                 <form action="">
-                    <input type="chiffre" name="chiffres" id="chiffres" placeholder="numéro de carte bancaire">
-                    <input type="text" name="Nom" id="Nom" placeholder="nom sur la CB">
-                    <div class="formCB">
+                    <input type="chiffre" name="chiffres" id="chiffres" placeholder="numéro de carte bancaire" size="25">
+                    <input type="text" name="Nom" id="Nom" placeholder="nom sur la CB"> 
+                    <input type="chiffre" name="chiffres" id="chiffres" 
+                    placeholder="CVV">
                     <input type="date" name="date" id="date" placeholder="Validité">
-                    <input type="chiffre" name="chiffres" id="chiffres" placeholder="CVV">
-                    </div>
+                   
                 </form>
             </p>
-            <p><form action="">
-                <button type="submit">PAYER</button></p>
+            <form action="" class="paye">
+                <button type="submit">PAIEMENT</button>
             </form>      
         </div>
     </section>
