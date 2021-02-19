@@ -8,32 +8,78 @@
     /* Acceuil */
 
 body{
-    font-family: 'Barlow', sans-serif;
+    font-family: 'Catamaran', sans-serif;
     font-size: 16px;
 }
 
 .flex {
-    display: flex;
-}
-.column {
-    flex-direction: column;
-}
-.entete {
-    justify-content: space-between;
+    display:flex;
 }
 
-header{
-    background: #F2ECE7;
+/* FONT */
+
+h1{
+    font-family: 'Barlow', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    padding: 10px;
+}
+ 
+h4{
+    font-family: 'Catamaran', sans-serif;
+    font-size: 18px;
+    font-weight: 200;
     
 }
 
-.myheader {
-    gap: 150px;
-    margin:27px 38px 11px 38px ;
+
+/* BARRE NAV */
+
+header{
+    background-color: #F5EAE0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    height: 61px;
 }
-.myheader2{
-    gap: 50px;
-    margin:27px 38px 11px 38px ;
+
+
+nav{
+    display: flex;
+   
+  
+}
+
+
+.h1{
+    margin-left: 30px;
+    margin-right: 90px;
+    padding: 13px;
+    z-index: 1;
+   min-height: 61px;
+   position: fixed;
+   
+ 
+}
+
+.cat1{
+    margin-left: 20vw;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    width: 564px;
+    
+    
+}
+
+.cat2{
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    width: 22vw;
+    margin-left: 210px;
+    
 }
 
 .big {
@@ -41,20 +87,21 @@ header{
     margin-bottom: 11px;
 }
 
+
+    /* Section */
 .landing {
-    border: 4px solid red;
     background: url(images/photo_acceuil.png) ;
     background-size: cover;
     height: 784px;
 }
 
 .titre {
-    border: 4px solid blue;
     font-family: 'Catamaran', sans-serif;
     font-size: 86px;
     line-height: 141px;
-    left:69px;
-    top: 516px;
+    font-weight: 100;
+    margin-left: 92px;
+    margin-bottom: 62px;
     height: 268px;
     display: flex;
     flex-direction: column;
@@ -85,7 +132,9 @@ header{
     align-items: center;
     font-family:'Catamaran', sans-serif;
 }
-
+.text {
+    font-size: 5rem;
+}
 .slider{
     background:#F2ECE7;
     position: fixed;
@@ -119,6 +168,28 @@ header{
 }
 
 
+
+
+/* Acccueil */
+
+
+.section2{
+    height: 122vh;
+    gap: 13vh;
+    justify-content: space-around;
+}
+.photoG{
+    margin:81px 94px 79px ;
+}
+.photoD{
+    margin: 81px 96px 94px;
+}
+
+
+
+
+
+
     /* Menu Déroulant */
 
 a, button {
@@ -127,6 +198,7 @@ a, button {
 
 .dropdown {
     /* height: 46vh; */
+    /* width: 100%; */
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
@@ -135,6 +207,8 @@ a, button {
 
 .vetement, .chaussures, .accessoires {
     position: relative;
+    border: none;
+    text-decoration: none;
 }
 
 
@@ -142,7 +216,6 @@ a, button {
     position: absolute;
     background: #F2ECE7;
     margin-top: 50px;
-    /* width: 50px; */
     height: 200px;
     display: flex;
     justify-content: space-around;
@@ -150,7 +223,7 @@ a, button {
     flex-direction: column;
     list-style: none;
     opacity:0;   
-    transform: translateY(10px);
+    transform: translateY(100%);
     transition: all 0.4s ease;
 }
 
@@ -169,6 +242,7 @@ a, button {
 
 .vetement li:hover, .chaussures li:hover, .accessoires li:hover {
     background-color:  #F2ECE7;
+    
 }
 
 
@@ -187,5 +261,5 @@ a, button {
 .accessoires button:focus + ul {
     opacity: 1;
     pointer-events: all;
-    transform: translateY(0px);
+    transform: translate(0px);
 }
