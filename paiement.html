@@ -6,86 +6,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Capsule</title>
     <link rel="stylesheet" href="paiement.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+
 </head>
 <body>
+    <!-- Section Panier & Paiement -->
     <section class="PP">
         <div class="panier">
-            <div class="box commande">
-                <h4>Résumé de la commande</h4>
-                <table>
-                    <tr>
-                        <td>1 article:</td>
-                        <td>39,00</td>
-                    </tr>
-                    <tr>
-                        <td>Frais de livraison:</td>
-                        <td>5,00</td>
-                    </tr>
-                    <tr>
-                        <td>TOTAL:</td>
-                        <td>44,00</td>
-                    </tr>
-                    <tr>
-                        <td>TVA incluse (20%):</td>
-                        <td>7,80</td>
-                    </tr>
-                </table>
-                <p>Code promotionnel: XY10</p>
-                <form action="">
-                <p> <button type="submit">VALIDER</button></p>
-                </form> 
+            <h5>Résumé de la commande :</h5>
+            <div class="facture">
+                <div class="ligne">
+                    <div>1 article :</div>
+                    <div>39,00 EUR</div>
+                </div>
+                <div class="ligne">
+                    <div>Frais de livraison :</div>
+                    <div>Gratuit</div>
+                </div>
+                <div class="ligne">
+                    <div>TOTAL :</div>
+                    <div>39,00 EUR</div>
+                </div>
+                <p id="pt">Supprimer</p>
+            </div>   
+            <form action=""></form>
+                <input class="code" type="text" name="code promotionnel" placeholder="Code promotionnel">
+            </form>
+            <hr>
+            <div class="ref">
+                <img id="vignette" src="images/vignette.png" alt="photo t-shirt coton bio">
+                <div class="reftxt">
+                    <p>T-shirt basique <br>
+                        Blanc <br>
+                        RÉF: 87004031-CHALACA-LM <br>
+                    </p>  
+                    <div class="smallbox"> 
+                        <p>Taille: 38 </p>
+                        <p>Quantité: 1 </p>
+                        <p>39,00 EUR</p>
+                    </div> 
+                </div>
             </div>
-            <div class="box ref">
-                <img src="vignette.jpg" alt="photo t-shirt coton bio">
-                <p>T-shirt basique <br>
-                Blanc <br>
-                RÉF: 87004031-CHALACA-LM <br>
-                <div class="TQ"> 
-                    <div class="tailleq">taille: 38</div> 
-                    <div class="tailleq">Quantité: 1</div>
-                </div> 
-                <table>
-                    <tr>
-                        <td>TOTAL:</td>
-                        <td>39,00</td>
-                    </tr>
-                </table>
-                 </p>
-            </div>
+            <form action="">
+                <button type="submit">FINALISER LA COMMANDE</button>
+            </form> 
         </div>
+        <!-- PAIEMENT -->
         <div class="paiement">
-            <h4>INFORMATIONS PERSONNELLES</h4>
+            <h6>Informations personnelles :</h6>
                 <form action="">
                     <label for="nom">Nom</label>
-                    <input type="text" name="nom" id="nom">
+                    <input type="text" name="nom" id="nom" >
                     <label for="prenom">Prénom</label>
-                    <input type="text" name="prenom" id="prenom">
+                    <input type="text" name="prenom" id="prenom" >
                 </form>
-            <h4>INFORMATIONS DE LIVRAISON</h4>
+            <h6>Informations de livraison :</h6>
                 <form action="">
                     <label for="adresse">Adresse</label>
-                    <input type="text" name="adresse" id="adresse">
+                    <input type="text" name="adresse" id="adresse" >
                 </form>
-            <h4>MODALITÉS DE PAIEMENT</h4>
-            <p> <img src="visa.png" alt="carte visa">
-                <img src="amex.png" alt="carte American Express">
-                <img src="paypal.png" alt="image Paypal">
+            <h6>Modalités de paiement :</h6>
+            <p class="cartes"> <img src="images/visa.png" alt="carte visa">
+                <img src="images/amex.png" alt="carte American Express">
+                <img src="images/paypal.png" alt="image Paypal">
             </p>
               <p>
             <p>
                 <form action="">
-                    <input type="number" name="numero" id="numero" placeholder="numéro de carte bancaire">
-                    <input type="text" name="Nom" id="Nom">
-                    <div class="formCB">
+                    <input type="chiffre" name="chiffres" id="chiffres" placeholder="numéro de carte bancaire" size="25">
+                    <input type="text" name="Nom" id="Nom" placeholder="nom sur la CB"> 
+                    <input type="chiffre" name="chiffres" id="chiffres" 
+                    placeholder="CVV">
                     <input type="date" name="date" id="date" placeholder="Validité">
-                    <input type="number" name="nombre" id="nombre" placeholder="CVV">
-                    </div>
+                   
                 </form>
             </p>
-            <p><form action="">
-                <button type="submit">PAYER</button></p>
-            </form>
-                
+            <form action="" class="paye">
+                <button type="submit">PAIEMENT</button>
+            </form>      
         </div>
     </section>
 

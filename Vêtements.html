@@ -6,42 +6,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Capsule</title>
     <link rel="stylesheet" href="Vêtements.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;500;700&family=Catamaran&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Catamaran:wght@100;200;700&display=swap" rel="stylesheet">
     
 </head>
 <body>
-     <!-- <HEADER> -->
-    <header>
+      <!-- HEADER -->
 
-        <nav class="nav">
-            <div class="h1">
-                <h1>LA CAPSULE</h1>
-            </div>
+    <header>
     
+        <div class="h1">
+            <h1>LA CAPSULE</h1>
+        </div>
+        
+        <nav class="nav">
+        
             <div class="cat1">
                 <h4>Vêtements</h4>
                 <h4>Chaussures</h4>
                 <h4>Accessoires</h4>
             </div>
-    
+
             <div class="cat2">
-                <h4>Mon compte<h4>                  <h4>Panier</h4>
-             </div>
-        </nav>
+                <h4>Mon compte</h4>
+                <h4>Panier</h4>
+            </div>
+        </nav> 
+
+        <div class="burger">
+            <span></span>
+            <span></span>
+            
+        </div>
+        
     </header>
+
          
     <!-- Section 1 -->   
 
     <section class="sectionImpaire flex">
         <img src="images/tshirt.png" class="grandePhoto" alt="mannequin en tshirt blanc">
         <img src="images/basket.png" class="petitePhoto"  alt="basket blanche">
-    </section>   
+    </section> 
+    
+    <!-- S1 RESPONSIVE -->
+
+    <section class="sectionImpaire2 flex2">
+        <img src="images/tshirtresp.png" class="grandePhoto2" alt="mannequin en tshirt blanc">
+        <img src="images/basketresp.png" class="petitePhoto2"  alt="basket blanche">
+    </section>  
 
     <!-- Section 2 -->
     <section class="sectionPaire flex">
         <img src="images/sandales.png" class="petitePhoto" alt="sandale cuir">
         <img src="images/robeNude.png" class="grandePhoto" alt="robe nude">
+    </section> 
+
+    <!-- S2 RESPONSIVE -->
+
+    <section class="sectionPaire2 flex2">
+        <img src="images/sandalesresp.png" class="petitePhoto2" alt="sandale cuir">
+        <img src="images/robe2resp.png" class="grandePhoto2" alt="robe nude">
     </section> 
     
     <!-- Section 3-->
@@ -50,10 +75,25 @@
         <img src="images/basketMulticolor.png" class="petitePhoto"  alt="basket multicolor">
     </section>   
 
+    <!-- S3 RESPONSIVE -->
+
+    <section class="sectionImpaire2 flex2">
+        <img src="images/sweatresp.png" class="grandePhoto2" alt="mannequin en sportwear">
+        <img src="images/basket2resp.png" class="petitePhoto2"  alt="basket multicolor">
+    </section>   
+
     <!-- Section 4 -->
     <section class="sectionPaire flex">
         <img src="images/scarpin.png" class="petitePhoto" alt="scarpin nude">
         <img src="images/tailleurNoir.png" class="grandePhoto" alt="tailleur noir">
+    </section> 
+
+
+    <!-- S4 RESPONSIVE -->
+
+    <section class="sectionPaire2 flex2">
+        <img src="images/talonsresp.png" class="petitePhoto2" alt="scarpin nude">
+        <img src="images/tailleurresp.png" class="grandePhoto2" alt="tailleur noir">
     </section> 
 
     <!-- Section 5 -->
@@ -61,7 +101,101 @@
         <img src="images/robeBlanche.jpg" class="grandePhoto" alt="robe blanche en dentelle">
         <img src="images/bottine.png" class="petitePhoto" alt="bottine noire">
     </section> 
+
+
+    <!-- S5 RESPONSIVE -->
+
+
+    <section class="sectionImpaire2 flex2">
+        <img src="images/roberesp.png" class="grandePhoto2" alt="robe blanche en dentelle">
+        <img src="images/bottinesresp.png" class="petitePhoto2" alt="bottine noire">
+    </section> 
     
+
+    <!-- JAVASCRIPT -->
+
+    <script src="app.js"></script>
+
+
+
+    <!-- FOOTER THUSIKA -->
+
+    <!-- FOOTER -->
+
+    <footer>
+
+
+        <!-- NEWS  -->
+
+         <div class="news">
+                <h3>Newsletter</h3>
+
+                <h5 id="mail">Adresse e-mail
+                </h5>
+
+                <h5>À propos de nous 
+                </h5>
+                
+            </div>
+
+            <!-- RESEAUX -->
+
+            <div class="reseaux">
+                
+                <h3>Réseaux sociaux</h3>
+
+                <a style="text-decoration:none" href="https://www.facebook.com/Jacquemusfanbasepage/" target="_blank" ><h5>Facebook</h5></a> 
+    
+                <a style="text-decoration:none" href="https://twitter.com/mango" target="_blank"><h5>Twitter </h5></a>
+    
+                <a style="text-decoration:none" href="https://www.instagram.com/mango/" target="_blank"><h5>Instagram</h5></a>
+    
+            </div>     
+
+            <!-- AIDE  -->
+
+            <div class="aide">   
+                <h3 style="cursor: help;">Aide</h3>
+                <h5>Livraison</h5>
+                <h5>Retour</h5>
+                <h5>FAQ</h5>
+
+            </div>
+
+            <!-- FORMULAIRE -->
+
+            
+            <div class="form">
+                <h3>Nous contacter</h3> 
+
+                <form action="">
+                    <input class="text"   type="text" name="nom" id="nom" placeholder="Nom">
+                    <input class="text" type="email" name="email" id="email" placeholder="E-mail">
+                    
+                    <textarea class="message" name="message" id="message" cols="30" rows="10" placeholder="Votre message"></textarea>
+                    
+                    <input class="button" type="submit" value="Envoyer">
+                </form>
+            </div>
+               
+
+            <!-- PICTO -->
+                
+
+            <div class="picto">
+
+                
+                <a href="https://www.facebook.com/Jacquemusfanbasepage/" target="_blank"> <img src="images/fb.png" alt="pictoreseauxsoc"></a>
+
+
+                <a href="https://www.instagram.com/mango/" target="_blank"> <img src="images/insta.png" alt=""> </a>
+
+                <a href="https://twitter.com/mango" target="_blank"> <img src="images/twi.png" alt=""> </a>
+
+            </div>
+
+        
+    </footer>
                
     
 </body>

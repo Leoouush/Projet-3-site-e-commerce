@@ -248,42 +248,40 @@ h3{
     font-family: 'Barlow', sans-serif;
     font-size: 18px;
     margin-bottom: 25px;
-}
-
-
-
-footer{
+  }
+  
+  
+  
+  footer{
     background-color: #F5EAE0;
     font-size: 19px;
     height: 501px;
-    
-}
-
-
-.foot{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     gap: 15px;
-}
-
-.foot h5{
+  }
+  
+  
+  
+  
+  footer h5{
     font-family: Catamaran;
     font-weight: 100;
    
-}
-
-
-.news{
+  }
+  
+  
+  .news{
    
     display: flex;
     flex-direction: column;
     margin-top: 61px;
     gap: 5px;
-}
-
-
-.reseaux{
+  }
+  
+  
+  .reseaux{
    
     text-decoration: none;
     display: flex;
@@ -291,28 +289,28 @@ footer{
     margin-top: 61px;
     gap: 5px;
     
-}
-
-#mail{
+  }
+  
+  #mail{
     border-bottom: 1px solid black;
     padding-right: 100px;
     margin-bottom: 53px;
     
-}
-
-.aide{
+  }
+  
+  .aide{
     
     display: flex;
     flex-direction: column;
     margin-top: 61px;
     gap: 5px;
-}
-
-
-/* FORMULAIRE */
-
-
-form{
+  }
+  
+  
+  /* FORMULAIRE */
+  
+  
+  form{
     gap: 20px;
     padding-top: 8px;
     display: flex;
@@ -320,36 +318,36 @@ form{
     justify-content: space-around;
     align-items: center;
     gap: 5px;
-}
-
-form>*{
+  }
+  
+  form>*{
     width: 288px;
     height: 23px;
     background: #FDFBFA;
     border: none;
- 
+  
     font-family: 'Catamaran', sans-serif;
     font-size: 18px;
     color: black;
     margin-top: 7px;
-}
-
-.text{
+  }
+  
+  .text{
     padding: 15px 20px;
-}
-
-.message{
+  }
+  
+  .message{
     height: 150px;
     padding: 15px ;
-}
-
-textarea{
+  }
+  
+  textarea{
     height: 188px;
-}
-
-/* bouton */
-
-form>*:last-child{
+  }
+  
+  /* bouton */
+  
+  form>*:last-child{
     width: 130px;
     height: 40px;
     font-size: 16px;
@@ -358,26 +356,25 @@ form>*:last-child{
     border: 1px  solid black;
     margin-top: 15px;
     
-}
-
-
-
-.button:hover {
-background-color: #FDFBF3;
-}
-
-.form{
+  }
   
+  
+  
+  .button:hover {
+    background-color: #FDFBF3;
+  }
+  
+  .form{
     padding-top: 62px;
     display: flex;
     flex-direction: column;
    
-}
-
-.picto{
+  }
+  
+  .picto{
     display: none;
-}
-
+  }
+  
 
 /* REPSONSIVE */
 
@@ -432,7 +429,6 @@ background-color: #FDFBF3;
         position: fixed;
         top: 0;
         left: 0;
-        right: 0;
         width: 100%;
         height: 100%;
         background-color: #F5EAE0; 
@@ -441,7 +437,7 @@ background-color: #FDFBF3;
         justify-content: center;
         align-items: center;
         gap: 50px;
-        transform: translateX(100%);
+        transform: translateX(-100%);
         transition: .7s;
         
         
@@ -511,35 +507,60 @@ background-color: #FDFBF3;
     }
 
 
-  /* FOOTER */
+    /* FOOTER  */
 
-  footer{
-      width: 100%;
-      font-size: 16px;
-      padding-left: 20px;
-      padding-right: 20px;
-      height: 280px;
+    footer{
+        width: 100%; 
+        height: 70rem;
+        font-size: 16px;
+        padding-left: 20px;
+        padding-right: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 15px;
       
-    }
-
-  .picto{
-      display: block;
-      padding-top: 14px;
-      display: flex;
-      justify-content: space-between;
-    }
-
-  #mail{
-        padding-right: 30px;
+      }
+    
+      .picto{
+        display: block;
+        padding-top: 14px;
+        display: flex;
+        justify-content: space-between;
+      }
+    
+      #mail{
+        padding-right: 0px;
         margin-bottom: 0;
-    }
-
- .reseaux{
-    display: none;
-    }
-
- form{
-    display: none;
+        width: 190px;
+        margin-bottom: 20px;
+      }
+    
+      .reseaux{
+        display: none;
+      }
+    
+      /* PICTO  */
+    
+    
+        .picto{
+          
+         padding: 30px 30px 0px 30px;
+        }
+    
+     /* FORM  */
+    
+      .form{
+        padding-top: 54px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        
+      }
+    
+    .text, .message, .button{
+      font-size: 15px;
+     
     }
 
  h5{
